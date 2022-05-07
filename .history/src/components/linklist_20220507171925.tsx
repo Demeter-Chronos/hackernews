@@ -16,10 +16,7 @@ export const LINK_QUERY = gql`
             name
         }
         votes {
-            id 
-            user {
-                id
-            }
+            
         }
       }
     }

@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import { AUTH_TOKEN } from '../constants';
 
 export default function Header() {
-  
+  const 
+
   return (
     <header>
       <div className="flex pa1 justify-between nowrap orange">

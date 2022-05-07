@@ -1,7 +1,7 @@
 import { AUTH_TOKEN } from '../constants';
 import { timeDifferenceForDate } from '../utils';
 
-export default function NewLink(props: { link: any; index: number }) {
+export default function NewLink(props: { link: any; }) {
     const { link } = props;
     return (
         <div className="flex mt2 items-start">
@@ -19,9 +19,9 @@ export default function NewLink(props: { link: any; index: number }) {
                     {link.description} ({link.url})
                 </div>
                 <div className="f6 lh-copy gray">
-                    {link.votes.length} votes | by {' '}
-                    {link.postedBy ? link.postedBy.name : 'Unknown'}{' '}
-                    {timeDifferenceForDate(link.createdAt)}
+                    link votes length votes | by
+                    {link.postedBy}
+                    {timelink.createdAt}
                 </div>
             </div>
         </div>

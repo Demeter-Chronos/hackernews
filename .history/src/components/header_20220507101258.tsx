@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
+
 export default function Header() {
-  
   return (
     <header>
       <div className="flex pa1 justify-between nowrap orange">

@@ -11,16 +11,7 @@ export const LINK_QUERY = gql`
         createdAt
         url
         description
-        postedBy {
-            id
-            name
-        }
-        votes {
-            id 
-            user {
-                id
-            }
-        }
+        
       }
     }
   }

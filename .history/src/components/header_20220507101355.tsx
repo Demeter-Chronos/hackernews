@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import { AUTH_TOKEN } from '../constants';
 
 export default function Header() {
+
   
   return (
     <header>

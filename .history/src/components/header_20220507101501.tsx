@@ -1,7 +1,11 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { AUTH_TOKEN } from '../constants';
 
 export default function Header() {
-  
+  const router = useRouter();
+  const authToken = localStorage.getItem()
+
   return (
     <header>
       <div className="flex pa1 justify-between nowrap orange">

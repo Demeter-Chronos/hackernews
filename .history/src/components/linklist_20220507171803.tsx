@@ -2,7 +2,7 @@ import NewLink from "./link";
 import { useQuery, gql } from "@apollo/client";
 
 
-export const LINK_QUERY = gql`
+const LINK_QUERY = gql`
 {
     feed {
       id
@@ -11,16 +11,6 @@ export const LINK_QUERY = gql`
         createdAt
         url
         description
-        postedBy {
-            id
-            name
-        }
-        votes {
-            id 
-            user {
-                id
-            }
-        }
       }
     }
   }

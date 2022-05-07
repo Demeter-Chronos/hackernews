@@ -1,7 +1,7 @@
 import { AUTH_TOKEN } from '../constants';
 import { timeDifferenceForDate } from '../utils';
 
-export default function NewLink(props: { link: any; index: number }) {
+export default function NewLink(props: { link: any; }) {
     const { link } = props;
     return (
         <div className="flex mt2 items-start">
