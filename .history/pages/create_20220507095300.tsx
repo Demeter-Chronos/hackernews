@@ -35,9 +35,8 @@ export default function CreateLink() {
         <div>
             <form
                 onSubmit={(e) => {
-                    e.preventDefault();
                     createLink();
-                    router.push('/');
+                    router
                 }}
             >
                 <div className="flex flex-column mt3">

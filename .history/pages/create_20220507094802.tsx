@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useMutation, gql } from '@apollo/client';
-import { useRouter } from 'next/router';
+import { useNavigate } from 'react-router-dom';
 
 const CREATE_LINK_MUTATION = gql`
 mutation PostMutation(
@@ -17,8 +17,6 @@ mutation PostMutation(
 `
 
 export default function CreateLink() {
-    const router = useRouter();
-
     const [formState, setFormState] = useState({
         description: '',
         url: ''
@@ -35,9 +33,7 @@ export default function CreateLink() {
         <div>
             <form
                 onSubmit={(e) => {
-                    e.preventDefault();
                     createLink();
-                    router.push('/');
                 }}
             >
                 <div className="flex flex-column mt3">

@@ -1,6 +1,6 @@
 import NewLink from "./link";
 import { useQuery, gql } from "@apollo/client";
-
+import { Key } from "react";
 
 const LINK_QUERY = gql`
 {

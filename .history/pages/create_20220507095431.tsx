@@ -35,7 +35,7 @@ export default function CreateLink() {
         <div>
             <form
                 onSubmit={(e) => {
-                    e.preventDefault();
+                    e.pre
                     createLink();
                     router.push('/');
                 }}
